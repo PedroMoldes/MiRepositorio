@@ -43,6 +43,19 @@ span {
 #color-segundo {
   color: #8538b4; }
 
+.paragraph1, .paragraph2, .paragraph3 {
+  font-weight: 300;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  background-color: #92cee3; }
+
+.paragraph2 {
+  background-color: #92ed92; }
+
+.paragraph3 {
+  background-color: #f08080; }
+
 #division {
   height: auto;
   display: grid;
@@ -100,7 +113,7 @@ span {
   grid-area: area9;
   transform: scaleY(2); }
 
-@media screen and (max-width: 817px) {
+@media screen and (max-width: 816px) {
   #division {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
