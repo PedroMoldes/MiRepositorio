@@ -3,12 +3,13 @@ h1{font-weight:700;
     color:#b52525;}
 h2{font-weight:500;
     color:#b27d1a;}
-nav{display:flex;
+#navigation{display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-around;
+    justify-content:center;
     margin-bottom:40px;}
-a{text-decoration:none;
+.anchor{text-decoration:none;
+    text-align:center;
     color:#02025b;
     background-color:#81efed;
     padding:4px;
@@ -17,19 +18,19 @@ a{text-decoration:none;
     border-color:#ff8800;
     border-radius:4px;}
 #ingredientes{list-style-type:disc;
-    background-image:url("imagenes/lasagna1.jpg");
+    background-image:url("../imagenes/lasagna1.jpg");
     background-size:auto;
     background-repeat:no-repeat;
     background-position:left;}
 span{background-color:#98dd30;}
 .color-primero{color:#2acec3;}
 #color-segundo{color:#8538b4;}
-div{height:auto;
+#division{height:auto;
     display:grid;
     grid-template-columns:repeat(4,1fr);
     grid-template-rows:repeat(3,1fr);
-    column-gap:145px;
-    row-gap:145px;
+    column-gap:0px;
+    row-gap:70px;
     grid-template-areas:
     "area1 area2 area3 area4"
     "area5 area6 area7 area8"
@@ -62,12 +63,34 @@ div{height:auto;
             transform:scaleX(2);}
 .img9:hover{grid-area:area9;
             transform:scaleY(2);}
-@media screen and (max-width:768px)
-{div{grid-template-columns:repeat(2,1fr);
-     grid-template-rows:repeat(5,1fr);
+@media screen and (max-width:816px)
+{#division{grid-template-columns:repeat(3,1fr);
+     grid-template-rows:repeat(3,1fr);
      grid-template-areas:
-     "area1 area2"
-     "area3 area4"
-     "area5 area6"
-     "area7 area8"
-     "area9 none";}}
+     "area1 area2 area3"
+     "area4 area5 area6"
+     "area7 area8 area9";}}
+@media screen and (max-width:616px) 
+{#division{grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(5,1fr);
+    grid-template-areas:
+    "area1 area2"
+    "area3 area4"
+    "area5 area6"
+    "area7 area8" 
+    "area9 none";}}
+@media screen and (max-width:426px)
+{#navigation{flex-direction:column;}}
+@media screen and (max-width:416px)
+{#division{grid-template-columns:repeat(1,1fr);
+    grid-template-rows:repeat(9,1fr);
+    grid-template-areas:
+    "area1"
+    "area2"
+    "area3"
+    "area4"
+    "area5"
+    "area6"
+    "area7"
+    "area8"
+    "area9";}}
