@@ -1,6 +1,8 @@
+/*Familia tipografica de Google Fonts*/
 body {
   font-family: 'M PLUS Rounded 1c',sans-serif; }
 
+/*Peso y color de fuente de titulos*/
 h1 {
   font-weight: 700;
   color: #b52525; }
@@ -9,6 +11,7 @@ h2 {
   font-weight: 500;
   color: #b27d1a; }
 
+/*Menu de navegacion principal*/
 #navigation {
   display: flex;
   flex-direction: row;
@@ -56,19 +59,7 @@ span {
 .paragraph3 {
   background-color: #f08080; }
 
-#division {
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  column-gap: 0px;
-  row-gap: 70px;
-  grid-template-areas: "area1 area2 area3 area4" "area5 area6 area7 area8" "area9 none none none";
-  justify-items: center;
-  align-items: center;
-  justify-content: space-around;
-  align-content: space-around; }
-
+/*Transformaciones y transiciones*/
 .imagen {
   transition-property: all;
   transition-delay: 0s;
@@ -113,6 +104,21 @@ span {
   grid-area: area9;
   transform: scaleY(2); }
 
+/*Grid*/
+#division {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 0px;
+  row-gap: 70px;
+  grid-template-areas: "area1 area2 area3 area4" "area5 area6 area7 area8" "area9 none none none";
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around; }
+
+/*Media queries*/
 @media screen and (max-width: 816px) {
   #division {
     grid-template-columns: repeat(3, 1fr);
