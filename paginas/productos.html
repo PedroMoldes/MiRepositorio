@@ -5,34 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Palabras claves de pagina-->
+    <!--Palabras Claves de Página-->
     <meta name="keywords" content="alimentos,bebidas,pastas,fideos,spaghetti,tallarin,tirabuzon,mostachol,arroz blanco,integrales,salvado,premezclas,pan rallado,rebozador,postres,bizcochuelo,brownies,gelatina,flan,helado">
     
-    <!--Descripcion de pagina-->
+    <!--Descripción de Página-->
     <meta name="description" content="Los productos están hechos con las mejores materias primas y con la calidad que ofrecen nuestros años de experiencia en la industria de la harina. En el segmento de pasta seca, ofrece una línea con 15 variedades, en presentaciones de 500g. Ahora también incorpora pan rallado en presentación de 1 Kg.">
 
-    <!--Familia tipografica de Google Fonts-->
+    <!--Enlace CDN al CSS de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!--Familia Tipográfica de Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     
-    <!--Enlace a mi archivo css-->
+    <!--Enlace a mi Archivo CSS-->
     <link rel="stylesheet" href="../css/estilo.css">
     
-    <!--Titulo de pagina-->
+    <!--Título de Página-->
     <title>Empresa Alimenticia | Productos</title>
 </head>
 <body>
 
-    <!--Menu de navegacion principal-->
-    <nav id="navigation">
-        <a class="anchor" href="../index.html">INICIO</a>
-        <a class="anchor" href="productos.html">PRODUCTOS</a>
-        <a class="anchor" href="recetas.html">RECETAS</a>
-        <a class="anchor" href="nosotros.html">NOSOTROS</a>
-        <a class="anchor" href="galeria.html">GALERIA</a>
-    </nav>
+    <!--Barra de Navegación de Bootstrap-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Empresa Alimenticia</a>
+      <button class="navbar-toggler"
+           type="button"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent"
+           aria-expanded="false"
+           aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="productos.html">PRODUCTOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="nutricion.html">NUTRICIÓN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sustentabilidad.html">SUSTENTABILIDAD</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="recetas.html">RECETAS</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tapas de empanadas</a></li>
+          <li><a class="dropdown-item" href="#">Tapas de pascualinas</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Mas recetas</a></li>
+        </ul>
+      </li>
+      </ul>
+      <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      </div>
+      </div>
+      </nav>
+      
+<!--Encabezado de Página-->
+<header>NOVEDADES ¡Llegaron los alimentos precocidos al vapor!🍲 Tu nueva opción de comidas rápidas y saludables, listos para disfrutar agregándoles sólo agua hirviendo.🫖 Ofrece varias opciones de sabores y salsas que se convierten en platos deliciosos para consumir en cualquier momento y lugar. Elaborados con ingredientes naturales, sin conservantes ni glutamato.👍</header>
 
+<!--Contenido Principal de Página-->
+<main>
     <h1>Nuestros Productos</h1>
 
     <p class="paragraph1"> Ofrece alimentos cotidianos y prácticos para toda la familia, como fideos, milanesas de soja, arroz, pan rallado, premezclas para preparar ñoquis, pizza, chipás y torta frita, vegetales congelados y rebozados de pollo.</p>
@@ -49,5 +96,58 @@
 
     <p> Es sinónimo de bizcochuelo rico, alto y esponjoso; y también un símbolo de calidad y trayectoria por más de 50 años. Propuestas dulces ideales para compartir momentos mágicos y alegres. Se destacan los brownies, las gelatinas, los postres, los helados, las mousses y la línea light.</p>
     <img src="../imagenes/torta2.jpg" alt="Torta matera">
+</main>
+    <!--Pie de Página con Sistema de Grilla de Bootstrap-->
+  <footer id="foot">
+    <div class="container text-start">
+      <div class="row">
+       <div class="col">ACERCA DE NOSOTROS
+         <ul class="footer-list">
+           <li>Esencia Corporativa</li>
+           <li>Inversores</li>
+           <li>Política de Calidad</li>
+           <li>Política SHE</li>
+           <li>Política WHO</li>
+           <li>Investigación y desarrollo</li>
+           <li>Historia</li>
+           <li>Contacto</li>
+         </ul>
+        </div>
+        <div class="col">PRENSA
+         <ul class="footer-list">
+           <li>Sobre nosotros en Argentina</li>
+           <li>Gacetillas de prensa</li>
+           <li>Novedades</li>
+         </ul>
+        </div>
+        <div class="col">EN SOCIEDAD
+         <ul class="footer-list">
+           <li>Creación de Valor Compartido</li>
+           <li>Personas Y Familias</li>
+           <li>Comunidad</li>
+           <li>Iniciativas Globales</li>
+         </ul>
+        </div>
+        <div class="col">NUESTRAS HISTORIAS
+         <ul class="footer-list">
+           <li>Historias destacadas</li>
+           <li>Personas y Familias</li>
+           <li>Comunidades</li>
+           <li>Planeta</li>
+         </ul>
+        </div>
+      </div>
+    </div>
+       <ul class="footer-list footer-list2">
+         <li class="item">Mapa del Sitio</li>
+         <li class="item">Políticas de Privacidad</li>
+         <li class="item">Política de Cookies</li>
+         <li class="item">Términos y Condiciones</li>
+         <li class="item">Defensa al Consumidor</li>
+       </ul>
+  </footer>
+
+    <!--Enlace CDN al JS de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

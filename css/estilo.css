@@ -1,8 +1,9 @@
-/*Familia tipografica de Google Fonts*/
+@charset "UTF-8";
+/*Familia Tipográfica de Google Fonts*/
 body {
   font-family: 'M PLUS Rounded 1c',sans-serif; }
 
-/*Peso y color de fuente de titulos*/
+/*Peso y Color de Fuente de Títulos*/
 h1 {
   font-weight: 700;
   color: #b52525; }
@@ -11,13 +12,12 @@ h2 {
   font-weight: 500;
   color: #b27d1a; }
 
-/*Menu de navegacion principal*/
+/*Menú de Navegación Principal*/
 #navigation {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px; }
+  justify-content: center; }
 
 .anchor {
   text-decoration: none;
@@ -30,12 +30,17 @@ h2 {
   border-color: #ff8800;
   border-radius: 4px; }
 
+header {
+  background-color: #f08080;
+  margin-bottom: 40px; }
+
 #ingredientes {
   list-style-type: disc;
   background-image: url("../imagenes/lasagna1.jpg");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: left; }
+  background-position: left;
+  opacity: .8; }
 
 span {
   background-color: #98dd30; }
@@ -59,7 +64,27 @@ span {
 .paragraph3 {
   background-color: #f08080; }
 
-/*Transformaciones y transiciones*/
+.card {
+  height: 100%; }
+
+/*Listas de Pie de Página con Sistema de Grilla de Bootstrap*/
+#foot {
+  background-color: #f7c88e; }
+
+.footer-list {
+  list-style-type: none;
+  padding-left: 0px; }
+
+.footer-list2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.item {
+  padding-right: 8px; }
+
+/*Transformaciones y Transiciones*/
 .imagen {
   transition-property: all;
   transition-delay: 0s;
@@ -118,7 +143,7 @@ span {
   justify-content: space-around;
   align-content: space-around; }
 
-/*Media queries*/
+/*Media Queries*/
 @media screen and (max-width: 816px) {
   #division {
     grid-template-columns: repeat(3, 1fr);

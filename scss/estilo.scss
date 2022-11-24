@@ -1,27 +1,27 @@
 //Variables
+$card-height: 100%;
 $px: 10px;
 $deg: 10deg;
 $weight: 100;
 
-/*Familia tipografica de Google Fonts*/
+/*Familia Tipográfica de Google Fonts*/
 body { font-family: 'M PLUS Rounded 1c',sans-serif; }
 
-/*Peso y color de fuente de titulos*/
+/*Peso y Color de Fuente de Títulos*/
 h1 { font-weight: $weight*7;
     color: #b52525; }
 
 h2 { font-weight: $weight*5;
     color: #b27d1a; }
 
-//Mixin sin parametros
+//Mixin sin Parámetros
 @mixin mix1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: ($px*2)+20; }
+    justify-content: center; }
 
-/*Menu de navegacion principal*/
+/*Menú de Navegación Principal*/
 #navigation {@include mix1;}
     
 .anchor {
@@ -35,12 +35,17 @@ h2 { font-weight: $weight*5;
     border-color: #ff8800;
     border-radius: ($px/2)-1; }
 
+header {
+    background-color: #f08080;
+    margin-bottom: ($px*2)+20; }
+
 #ingredientes {
     list-style-type: disc;
     background-image: url("../imagenes/lasagna1.jpg");
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: left; }
+    background-position: left;
+    opacity: .8; }
 
 span{background-color:#98dd30;}
 .color-primero{color:#2acec3;}
@@ -60,12 +65,28 @@ span{background-color:#98dd30;}
 .paragraph3 { @extend .paragraph1;
     background-color: #f08080; }
 
-//Mixin con parametros
+.card{height: $card-height;}
+
+/*Listas de Pie de Página con Sistema de Grilla de Bootstrap*/
+#foot { background-color: #f7c88e; }
+.footer-list { 
+    list-style-type: none;
+    padding-left: 0px; }
+
+.footer-list2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+.item { padding-right: 8px; }
+
+//Mixin con Parámetros
 @mixin mix2 ($delay,$duration) {
     transition-delay: $delay;
     transition-duration: $duration; }
 
-/*Transformaciones y transiciones*/
+/*Transformaciones y Transiciones*/
 .imagen {
     transition-property: all;
     @include mix2(0s,1s);
@@ -126,7 +147,7 @@ span{background-color:#98dd30;}
     justify-content: space-around;
     align-content: space-around; }
 
-/*Media queries*/
+/*Media Queries*/
 @media screen and (max-width:816px) {
 #division {
   grid-template-columns: repeat(3,1fr);
